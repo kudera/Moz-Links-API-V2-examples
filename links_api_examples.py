@@ -7,7 +7,7 @@ with open("../config.json") as CONFIG:
     CONFIG = json.load(CONFIG)
 
     
-# reads config.json for links API access_id and secret_key
+# defines links API access_id and secret_key from config file
 access_id = CONFIG["links_api"]["access_id"]
 secret_key = CONFIG["links_api"]["secret_key"]
 
