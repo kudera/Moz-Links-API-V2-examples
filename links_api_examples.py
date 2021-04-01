@@ -161,7 +161,3 @@ def usage_data(access_id, secret_key):
     request = requests.post(url, data=payload, auth=auth)
 
     return request
-
-
-response_json = usage_data(access_id, secret_key).json()
-print(response_json)
