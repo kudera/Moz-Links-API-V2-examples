@@ -175,3 +175,8 @@ def usage_data(access_id, secret_key):
     request = requests.post(url, data=data, auth=auth)
 
     return request
+
+
+# retrieve the data (example with anchor_text)
+response_json = anchor_text(access_id, secret_key).json()
+print(response_json)
