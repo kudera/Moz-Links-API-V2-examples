@@ -171,7 +171,10 @@ def url_metrics(access_id, secret_key):
 def usage_data(access_id, secret_key):
     auth = (access_id, secret_key)
     url = 'https://lsapi.seomoz.com/v2/usage_data'
-    data = "{}"
+    data = """{
+                "start": "1633046400",
+                "end": "1635724799"
+            }"""
     request = requests.post(url, data=data, auth=auth)
 
     return request
